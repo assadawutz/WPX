@@ -1,0 +1,6 @@
+{
+  "name": "WPX OS",
+  "description": "An all-in-one productivity and intelligence OS with integrated AI, developer tools, and data management modules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

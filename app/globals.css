@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  :root {
+    --bg: #f0f2f8;
+    --text: #0a0b14;
+    --text-2: #4a4b5a;
+    --text-3: #8a8b9a;
+    --border: rgba(0,0,0,0.07);
+    --border-hover: rgba(0,0,0,0.12);
+  }
+
+  .dark {
+    --bg: #03040a;
+    --bg-2: #0c0e1a;
+    --bg-3: #111324;
+    --bg-4: #181a2e;
+    --text: #f0f4ff;
+    --text-2: #a8b4d0;
+    --text-3: #6b7a99;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.12);
+  }
+
+  * {
+    @apply border-[var(--border)];
+  }
+
+  body {
+    @apply bg-[var(--bg)] text-[var(--text)] font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-[rgba(12,14,26,0.85)] backdrop-blur-[20px];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
